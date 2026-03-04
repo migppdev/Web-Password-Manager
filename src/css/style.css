@@ -1,0 +1,24 @@
+* {
+  font-family: monospace;
+  font-size: large;
+}
+
+body {
+  margin: 1rem 5rem 1rem 5rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 0.5rem;
+  min-width: 8rem;
+  border-radius: 0.5rem;
+  border: 0.2px solid black;
+}
+
+.new-entry-button {
+  background-color: lightgreen;
+}
