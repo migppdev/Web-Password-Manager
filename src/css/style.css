@@ -22,3 +22,19 @@ body {
 .new-entry-button {
   background-color: lightgreen;
 }
+
+.entry-modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.2px solid black;
+}
+
+.entry-modal.active {
+  display: block;
+}
