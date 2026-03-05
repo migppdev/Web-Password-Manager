@@ -1,22 +1,30 @@
 * {
   font-family: monospace;
   font-size: large;
+  box-sizing: border-box;
 }
 
 body {
   margin: 1rem 5rem 1rem 5rem;
+  background-color: white;
+}
+
+.main-container {
+  margin-top: 2rem;
 }
 
 .top-bar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.button {
-  padding: 0.5rem;
-  min-width: 8rem;
-  border-radius: 0.5rem;
-  border: 0.2px solid black;
+.top-bar .title {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+  flex: 1 1 100%;
+  margin-bottom: 1rem;
 }
 
 .new-entry-button {
@@ -26,15 +34,44 @@ body {
 .entry-modal {
   display: none;
   position: fixed;
+
+  /* Center modal */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
   background-color: lightgoldenrodyellow;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 0.2px solid black;
 }
 
+.button {
+  padding: 0.5rem;
+  min-width: 8rem;
+  border-radius: 0.5rem;
+  border: 0.2px solid black;
+}
+
 .entry-modal.active {
   display: block;
+}
+
+.entries-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.entry-box {
+  background-color: #c7eabb;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  flex: 1 1 30%;
+  margin-bottom: 0.3rem;
+}
+
+.sign-in-button {
+  background-color: #a2cb8b;
 }
